@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>SSO Universitas Diponegoro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1280/https://brainpersonalities.com/wp-content/uploads/2021/11/undip-baner.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      backdrop-filter: blur(5px);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card {
+      background-color: white; /* GANTI DARI TRANSPARAN KE PUTIH */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-card img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .login-card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .login-card p {
+      margin: 5px 0 20px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #0047AB;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .reset-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .links {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .links a {
+      display: block;
+      color: #007bff;
+      text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .links a:first-child {
+      color: #e60023;
+      font-weight: bold;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #aaa;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <img src="https://1.bp.blogspot.com/-
+tThKR0i2DdQ/XrO4fFiulNI/AAAAAAAAB_s/4_UY2xeR3SsE9_5MGBdvsQtBJgNxf9e_wCLcBGA
+sYHQ/s1600/Logo%2BUndip%2BUniversitas%2BDiponegoro.png" alt="Logo UNDIP">
+    <h2>Single Sign On (SSO)</h2>
+    <p>Universitas Diponegoro</p>
+    <hr class="divider">
+    <p>Silahkan Masuk</p>
+
+    <input type="text" id="username" placeholder="NIM/NIP/username/e-mail official Undip">
+
+    <button class="login-btn" onclick="login()">🔒 LOGIN</button>
+    <button class="reset-btn" onclick="resetPassword()">🔁 Reset Password</button>
+
+    <div class="links">
+      <a href="#">Daftar sekarang!</a>
+      <a href="#">Pendaftaran alumni klik disini</a>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      let username = document.getElementById("username").value;
+      if (username.trim() === "") {
+        alert("Silakan isi username terlebih dahulu.");
+      } else {
+        alert("Login untuk: " + username);
+      }
+    }
+
+    function resetPassword() {
+      alert("Fitur reset password belum tersedia.");
+    }
+  </script>
+
+</body>
+</html>
